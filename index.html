@@ -9,10 +9,9 @@
     <label for="lastname">Votre nom  : </label><input type="text" name="lastname" onkeypress="clavier();" id="lastname" />
     <script>
     //declaration de fonction
-    function clavier () {
-      var lastname = document.getElementById('lastname').value;
-      alert('lastname');
-    }
+      document.onkeypress=function(e){
+    alert('Character: '+String.fromCharCode(e.charCode))
+}
     </script>
   </form>
 </body>
